@@ -1,0 +1,38 @@
+.Hamburger {
+    width: 2.5rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 500px) {
+    .Hamburger {
+        display: none;
+    }
+}
+
+.Icon {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+}
+
+.Icon::before,
+.Icon::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+}
+
+.Icon::before {
+    top: 2px;
+}
+
+.Icon::after {
+    bottom: 2px;
+}
